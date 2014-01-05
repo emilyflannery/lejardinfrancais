@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
+/*
+Theme Name: Le Jardin Francais - Wordpress Theme
+Author: Emily Flannery
+Author URI: http://www.emilyflannery.com/ 
+Version: 1.0 
+Tags:  
+*/
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+@font-face { font-family: "caslon224-bold"; src: url("../fonts/caslon224-bold.ttf") format("truetype"), url("../fonts/caslon224-bold.otf") format("opentype"), url("../fonts/caslon224-bold.woff") format("woff"), url("../fonts/caslon224-bold.eot") format("embedded-opentype"); }
+
+@font-face { font-family: "proximanova-regular"; src: url("../fonts/proximanova-regular.ttf") format("truetype"), url("../fonts/proximanova-regular.otf") format("opentype"), url("../fonts/proximanova-regular.woff") format("woff"), url("../fonts/proximanova-regular.eot") format("embedded-opentype"); }
+
+@font-face { font-family: "proximanova-regularitalic"; src: url("../fonts/proximanova-regularitalic.ttf") format("truetype"), url("../fonts/proximanova-regularitalic.otf") format("opentype"), url("../fonts/proximanova-regularitalic.woff") format("woff"), url("../fonts/proximanova-regularitalic.eot") format("embedded-opentype"); }
+
+@font-face { font-family: "proximanova-bold"; src: url("../fonts/proximanova-bold.ttf") format("truetype"), url("../fonts/proximanova-bold.otf") format("opentype"), url("../fonts/proximanova-bold.woff") format("woff"), url("../fonts/proximanova-bold.eot") format("embedded-opentype"); }
+
+@font-face { font-family: "proximanova-bolditalic"; src: url("../fonts/proximanova-bolditalic.ttf") format("truetype"), url("../fonts/proximanova-bolditalic.otf") format("opentype"), url("../fonts/proximanova-bolditalic.woff") format("woff"), url("../fonts/proximanova-bolditalic.eot") format("embedded-opentype"); }
+
+/*-----------------------------------------------------------------------------
+GLOBAL
+-----------------------------------------------------------------------------*/
+/* line 56, ../sass/style.scss */
+.hide { display: none; }
+
+/* line 60, ../sass/style.scss */
+.show { display: block; }
+
+/* line 64, ../sass/style.scss */
+html { background: #fefefe; font-size: 65.2%; height: 100%; }
+
+/* line 70, ../sass/style.scss */
+body { margin: 0 auto; width: 943px; }
+
+/* line 75, ../sass/style.scss */
+h1 { text-align: right; margin: 33px 0 0 0; }
+/* line 78, ../sass/style.scss */
+h1 img { height: auto; width: 225px; }
+
+/* line 84, ../sass/style.scss */
+h2 { color: #93a4b1; font-family: "proximanova-regular", helvetica, arial, sans-serif; letter-spacing: .25em; line-height: 2em; padding: 30px 0 10px 0; text-transform: uppercase; font-size: 13px; font-size: 1.3rem; }
+
+/* line 94, ../sass/style.scss */
+h3 { border-bottom: 1px solid #ededed; color: #93a4b1; font-family: "proximanova-bold", helvetica, arial, sans-serif; font-size: 11px; letter-spacing: .2em; padding: 5px 0 8px 0; margin: 8px 0; text-transform: uppercase; }
+
+/* line 105, ../sass/style.scss */
+h4 { color: #93a4b1; font-family: "proximanova-regular", helvetica, arial, sans-serif; font-size: 12px; font-weight: lighter; line-height: 1.5em; padding-bottom: 8px; font-style: italic; }
+
+/* line 115, ../sass/style.scss */
+h5 { color: #93a4b1; font-family: "proximanova-regular", helvetica, arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 1.7em; padding-bottom: 8px; }
+
+/* line 126, ../sass/style.scss */
+strong { font-weight: bold; font-family: "proximanova-bold", helvetica, arial, sans-serif; }
+
+/* line 132, ../sass/style.scss */
+a:link, a:visited { color: #93a4b1; text-decoration: none; }
+
+/* line 138, ../sass/style.scss */
+a:active, a:hover { color: #93a4b1; }
+
+/* line 142, ../sass/style.scss */
+p { color: #93a4b1; font-family: "Lusitana", georgia, serif; letter-spacing: .15em; line-height: 2.3em; padding: 0 0 2em 0; font-size: 12.5px; font-size: 1.25rem; font-variant: small-caps; }
+
+/* line 152, ../sass/style.scss */
+nav { float: left; margin: 30px 40px 0 0; width: 170px; }
+/* line 157, ../sass/style.scss */
+nav ul.primary { text-align: right; }
+/* line 160, ../sass/style.scss */
+nav ul.primary li { padding: 0 0 15px 0; }
+/* line 163, ../sass/style.scss */
+nav ul.primary li a { color: #93a4b1; font-family: "caslon224-bold", georgia, serif; letter-spacing: .3em; line-height: 1.5em; text-align: right; text-transform: uppercase; font-size: 11px; font-size: 1.1rem; }
+/* line 173, ../sass/style.scss */
+nav ul.primary li:hover a { background-color: #93a4b1; color: #fefefe; padding: 5px; }
+/* line 181, ../sass/style.scss */
+nav ul.secondary { display: none; font-family: "proximanova-regular", helvetica, arial, sans-serif; padding: 15px 0 0 0; transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; /* Firefox 4 */ -webkit-transition: all 0.2s ease-in-out; /* Safari and Chrome */ -o-transition: all 0.2s ease-in-out; /* Opera */ }
+/* line 187, ../sass/style.scss */
+nav ul.secondary li { padding: 0 0 5px 0; }
+/* line 192, ../sass/style.scss */
+nav ul.secondary li a, nav ul.secondary li a:link, nav ul.secondary li a:visited { background-color: transparent; color: #93a4b1; font-family: sans-serif; letter-spacing: .15em; text-transform: none; font-size: 9.5px; font-size: 0.95rem; }
+/* line 200, ../sass/style.scss */
+nav ul.secondary li a:hover, nav ul.secondary li a:link:hover, nav ul.secondary li a:visited:hover { font-weight: bold; }
+
+/* line 208, ../sass/style.scss */
+#bar { background-color: rgba(171, 183, 193, 0.9); -moz-background-clip: padding; -webkit-background-clip: padding; background-clip: padding-box; border-top: 6px solid rgba(171, 183, 193, 0.5); border-bottom: 10px solid rgba(171, 183, 193, 0.5); height: 45px; position: absolute; top: 515px; left: 0; width: 100%; z-index: 10; }
+/* line 222, ../sass/style.scss */
+#bar #bar-content-wrap { margin: 0 auto; position: relative; width: 930px; }
+/* line 227, ../sass/style.scss */
+#bar #bar-content-wrap #social { margin-top: 12px; text-align: right; width: 160px; }
+/* line 232, ../sass/style.scss */
+#bar #bar-content-wrap #social img { height: 20px; padding: 0 5px; vertical-align: middle; width: auto; }
+
+/************************* IMAGE BANNER *************************/
+/* line 244, ../sass/style.scss */
+.banner { border: 6px solid rgba(255, 255, 255, 0.6); box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6); -webkit-box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6); -moz-box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6); margin: 30px -3px 0 210px; height: 428px; width: 711px; }
+/* line 253, ../sass/style.scss */
+.banner .img-wrap { box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6), 6px 6px 0 0 rgba(255, 255, 255, 0.6); -webkit-box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6); -moz-box-shadow: -6px -6px 0 0 rgba(255, 255, 255, 0.6); display: inline-block; margin: -6px 0 -6px -6px; }
+/* line 260, ../sass/style.scss */
+.banner .img-wrap img { position: relative; z-index: -1; }
+
+/* line 269, ../sass/style.scss */
+#home:after { content: ""; position: absolute; margin-left: -6px; border-right: 6px solid rgba(255, 255, 255, 0.6); height: 428px; }
+/* line 277, ../sass/style.scss */
+#home .img-wrap { height: 440px; width: 240px; }
+/* line 281, ../sass/style.scss */
+#home .img-wrap img { height: 440px; width: 240px; }
+
+/* line 290, ../sass/style.scss */
+#single .img-wrap { height: 440px; position: relative; width: 723px; }
+/* line 295, ../sass/style.scss */
+#single .img-wrap img { height: 440px; width: 723px; }
+
+/* line 304, ../sass/style.scss */
+#press .img-wrap { height: 440px; position: relative; width: 723px; }
+/* line 309, ../sass/style.scss */
+#press .img-wrap img { height: 440px; width: 723px; }
+/* line 315, ../sass/style.scss */
+#press .button-press { color: #fefefe; font-family: "caslon224-bold", georgia, serif; position: absolute; bottom: 50px; left: 285px; letter-spacing: .25em; text-transform: uppercase; z-index: 10; }
+
+/* line 329, ../sass/style.scss */
+#seasonal:after { content: ""; position: absolute; margin-left: -6px; border-right: 6px solid rgba(255, 255, 255, 0.6); height: 428px; }
+/* line 337, ../sass/style.scss */
+#seasonal .img-wrap { height: 440px; position: relative; width: 180px; }
+/* line 342, ../sass/style.scss */
+#seasonal .img-wrap img { height: 440px; width: 180px; z-index: -1; }
+/* line 349, ../sass/style.scss */
+#seasonal .button-season { color: #fefefe; font-family: "caslon224-bold", georgia, serif; position: absolute; bottom: 50px; left: 45px; letter-spacing: .25em; text-transform: uppercase; z-index: 10; }
+/* line 359, ../sass/style.scss */
+#seasonal .button-season img { position: relative; top: 10px; left: -10px; height: 30px; width: 30px; }
+
+/************ FIREFOX FIX ************/
+@-moz-document url-prefix() { /* line 372, ../sass/style.scss */
+  .banner { width: 721px; }
+  /* line 375, ../sass/style.scss */
+  .banner .img-wrap { margin-left: -2px; }
+  /* line 378, ../sass/style.scss */
+  .banner .img-wrap:first-child { margin-left: -6px; } }
+
+/************************* PAGE CONTENT *************************/
+/* line 388, ../sass/style.scss */
+.content { margin-left: 210px; width: 723px; }
+
+/* line 394, ../sass/style.scss */
+.page-nav { border-top: 1px solid #93a4b1; border-bottom: 1px solid #93a4b1; margin: 15px 0 40px 0; text-align: center; width: 100%; }
+/* line 401, ../sass/style.scss */
+.page-nav li { display: inline; padding: 5px 13px; }
+/* line 409, ../sass/style.scss */
+.page-nav li a { font-family: "proximanova-regular", helvetica, arial, sans-serif; font-size: 11px; letter-spacing: .2em; line-height: 2.5em; text-transform: uppercase; }
+
+/* line 419, ../sass/style.scss */
+.partner { display: inline-block; text-align: center; margin: 25px 2.5%; width: 25%; }
+/* line 425, ../sass/style.scss */
+.partner img { max-width: 100%; height: auto; margin-bottom: 10px; vertical-align: bottom; }
+/* line 432, ../sass/style.scss */
+.partner p { line-height: 1.5em; }
+
+/* line 437, ../sass/style.scss */
+.map { color: #93a4b1 !important; }
+
+/* line 441, ../sass/style.scss */
+footer { margin-top: 50px; position: absolute; text-align: center; left: 0; width: 100%; }
+/* line 448, ../sass/style.scss */
+footer p { background-color: #eaeae9; color: #6e6e6e; line-height: 1.5em; margin-bottom: 30px; padding-top: 15px; padding-bottom: 20px; position: relative; width: 100%; }
