@@ -5,15 +5,12 @@ Template Name: Standard Page
 ?>
 
 <?php get_header(); ?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-	<div id="about" class="banner">
+	<div id="standard" class="banner">
 		<div class="img-wrap">
-			<?php 
-				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				  the_post_thumbnail();
-				} 
-			?>
+		    <?php the_post_thumbnail( $size, $attr ); ?> 
 		</div>
 	</div>
 
@@ -22,9 +19,8 @@ Template Name: Standard Page
 		<?php the_content(); ?> 
 	</div>
 
-
 <?php endwhile; else: ?>
-	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<p><?php _e('Sorry, the page was not found.'); ?></p>
 <?php endif; ?>
 
 	

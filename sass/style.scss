@@ -175,10 +175,14 @@ width: 170px;
 			color: $white;
 			padding: 5px;
 			}
+
+			&:hover ul.sub-menu {
+			display: block;
+			}
 		}
 	}
 
-	ul.secondary {
+	ul.sub-menu {
 	display: none;
 	font-family: $sans-serif;
 	padding: 15px 0 0 0;
@@ -226,6 +230,7 @@ width: 170px;
 			
 			#social {
 			margin-top: 12px;
+			float: left;
 			text-align: right;
 			width: 160px;
 				
@@ -234,6 +239,40 @@ width: 170px;
 				padding: 0 5px;
 				vertical-align: middle;
 				width: auto;
+				}
+			}
+
+			#seasonal-nav {
+			
+				display: inline-block;
+				margin-left: 44px;
+				width: 723px;
+				
+				li {
+				color: $white;
+				display: inline-block;
+				font-family: $serif;
+				height: 40px;
+				letter-spacing: .25em;
+				text-align: center;
+				text-transform: uppercase;
+				top: -3px;
+				position: relative;
+				width: 173px;
+				z-index: 10;
+				
+
+					a {
+					color: $white;
+					}
+
+					img {
+					position: relative;
+					top: 10px;
+					left: -10px;
+					height: 30px;
+					width: 30px;
+					}
 				}
 			}
 		}
@@ -285,7 +324,7 @@ width: 170px;
 	}
 }
 
-#single {
+#standard {
 	
 	.img-wrap {
 	height: 440px;
@@ -343,25 +382,6 @@ width: 170px;
 		height: 440px;
 		width: 180px;
 		z-index: -1;
-		}
-	}
-
-	.button-season {
-	color: $white;
-	font-family: $serif;
-	position: absolute;
-	bottom: 50px;
-	left: 45px;
-	letter-spacing: .25em;
-	text-transform: uppercase;
-	z-index: 10;
-
-		img {
-		position: relative;
-		top: 10px;
-		left: -10px;
-		height: 30px;
-		width: 30px;
 		}
 	}
 

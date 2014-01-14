@@ -19,7 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title>Le Jardin Francais | <?php wp_title("",true); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
@@ -63,5 +63,23 @@
 					<img src="/wp-content/themes/lejardinfrancais/images/icon-facebook.png" />
 				</a>
 			</div>
+
+			<?php if ( is_page_template('page-templates/gallery.php') || is_page_template('page-templates/seasonal.php') ) : ?>
+				<ul id="seasonal-nav">
+					<li>
+						<a class="seasonal-item" href=""><img src="/wp-content/themes/lejardinfrancais/images/season-spring.png" />Spring</a>
+					</li>
+					<li>
+						<a class="seasonal-item" href=""><img src="/wp-content/themes/lejardinfrancais/images/season-summer.png" />Summer</a>
+					</li>
+					<li>
+						<a class="seasonal-item" href=""><img src="/wp-content/themes/lejardinfrancais/images/season-autumn.png" />Autumn</a>
+					</li>
+					<li>
+						<a class="seasonal-item" href=""><img src="/wp-content/themes/lejardinfrancais/images/season-winter.png" />Winter</a>
+					</li>
+				</ul>
+			<?php endif; ?>
+
 		</div>
 	</div>

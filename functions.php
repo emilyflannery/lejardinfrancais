@@ -12,16 +12,48 @@
  */
 
 
-/* Enable Featured Image */
-add_theme_support( 'post-thumbnails' );
+
+
 
 /* Register Nav Menu */
+add_action( 'init', 'register_my_menu' );
+
 function register_my_menu() {
   register_nav_menu('main-navigation',__( 'Main Navigation' ));
 }
-add_action( 'init', 'register_my_menu' );
 
 
+
+/************ CUSTOM POST TYPES **************/
+add_action( 'init', 'create_post_type' );
+
+function create_post_type() {
+	register_post_type( 'ljf_seasonal_images',
+		array(
+			'labels' => array(
+				'name' => __( 'Seasonal Images' ),
+				'singular_name' => __( 'Seasonal Image' )
+			),
+		'public' => true,
+		'show_ui' => true,
+		'capability_type' => 'post',
+		'taxonomies' => array('category'),
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'seasonal-images'),
+		'query_var' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'custom-fields',
+			'revisions',
+			'thumbnail',
+			'page-attributes',)
+			)
+	);
+}
+
+
+/************ BLOG CUSTOMIZATION **************/
 add_theme_support( 'automatic-feed-links' );
 
 /* Customizing WP Excerpt */
@@ -101,3 +133,40 @@ if ( function_exists('register_sidebar') )
 	'after_widget' => '',
 
 ));
+
+
+// Add Custom image sizes
+/** Add new image sizes */
+// ( 'name', width, height, crop) 
+add_image_size( 'blog_1-2_horizontal', 354, 265, true );
+add_image_size( 'blog_1-2_vertical', 354, 532, true );
+add_image_size( 'blog_1-3_horizontal', 231, 171, true );
+add_image_size( 'blog_1-3_vertical', 231, 347, true );
+
+//** Add image sizes to Media Selection */
+add_filter('image_size_names_choose', 'me_display_image_size_names_muploader', 11, 1);
+function me_display_image_size_names_muploader( $sizes ) {
+  
+	$new_sizes = array();
+	
+	$added_sizes = get_intermediate_image_sizes();
+	
+	// $added_sizes is an indexed array, therefore need to convert it
+	// to associative array, using $value for $key and $value
+	foreach( $added_sizes as $key => $value) {
+		$new_sizes[$value] = $value;
+	}
+	
+	// This preserves the labels in $sizes, and merges the two arrays
+	$new_sizes = array_merge( $new_sizes, $sizes );
+	
+	return $new_sizes;
+}
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'your-custom-size' => __('Your Custom Size Name'),
+    ) );
+}

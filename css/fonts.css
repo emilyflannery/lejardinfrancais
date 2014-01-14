@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
-@font-face { font-family: "caslon224-bold"; src: url("../fonts/caslon224-bold.ttf") format("truetype"), url("../fonts/caslon224-bold.otf") format("opentype"), url("../fonts/caslon224-bold.woff") format("woff"), url("../fonts/caslon224-bold.eot") format("embedded-opentype"); }
+@font-face { font-family: "caslon224-bold"; src: url("/wp-content/themes/lejardinfrancais/fonts/caslon224-bold.ttf") format("truetype"), url("/wp-content/themes/lejardinfrancais/fonts/caslon224-bold.otf") format("opentype"), url("/wp-content/themes/lejardinfrancais/fonts/caslon224-bold.woff") format("woff"), url("/wp-content/themes/lejardinfrancais/fonts/caslon224-bold.eot") format("embedded-opentype"); }
 
 @font-face { font-family: "proximanova-regular"; src: url("../fonts/proximanova-regular.ttf") format("truetype"), url("../fonts/proximanova-regular.otf") format("opentype"), url("../fonts/proximanova-regular.woff") format("woff"), url("../fonts/proximanova-regular.eot") format("embedded-opentype"); }
 
